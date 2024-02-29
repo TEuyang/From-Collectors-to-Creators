@@ -1,0 +1,270 @@
+/* Custom font */
+/* @font-face {
+  font-family: myFirstFont;
+  src: url(sansation_light.woff);
+} */
+
+/************** CSS Reset **************/
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  padding-top: 10px;
+  margin-bottom: 10px;
+}
+
+video {
+  max-width: 100%;
+}
+
+iframe {
+  max-width: 100%;
+  max-height: 20%;
+  margin-top: 5%;
+}
+/************** End CSS Reset **************/
+
+#omars-container {
+  width: 100vw;
+  background-color: black;
+  font-family: "Neue Haas Grotesk Display Pro", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+h1 {
+  color: whitesmoke;
+  padding: 10px;
+}
+
+h3,
+p {
+  padding: 10px;
+  color: whitesmoke;
+}
+
+/* TOP SECTION */
+
+#top {
+  padding: 10px;
+  display: flex;
+}
+
+#topcolumn-1 {
+  flex: 40vw;
+  margin: 5%;
+}
+
+#topcolumn-2 {
+  flex: 60vw;
+  margin: 5%;
+}
+
+.research {
+  color: #ffe500;
+  margin: 10px;
+}
+
+.source {
+  display: flex;
+  justify-content: end;
+  border-bottom: 0.5px dashed #ffe500;
+  color: #ffe500;
+  font-size: smaller;
+}
+
+/* TOP SECTION END */
+
+/* PROCESS GRAPHIC */
+
+#processgraphic {
+  display: flex;
+  border-top: 2px solid whitesmoke;
+}
+
+.process {
+  flex: 25%;
+  justify-content: right;
+  margin-left: 5%;
+}
+
+/* PROCESS GRAPHIC END */
+
+/* SCAN SECTION START */
+
+#scan {
+  margin-top: 20px;
+
+  display: flex;
+}
+
+#scancolumn-1 {
+  flex: 40vw;
+  margin: 5%;
+}
+
+#scancolumn-2 {
+  flex: 60vw;
+  margin-top: 5%;
+  margin-right: 5%;
+}
+
+#scanresearch {
+  /* border-left: 1px solid yellow;
+  border-bottom: 1px solid yellow; */
+  padding: 10px;
+}
+
+/* #scanresearch-2 {
+  display: flex;
+  flex: 60%;
+} */
+
+/* #scanresearch-3 {
+  display: flex;
+  flex: 50%;
+}
+
+#scanresearch-4 {
+  display: flex;
+  flex: 40%; 
+}*/
+/* SCAN SECTION END */
+
+/* ZOOM SECTION */
+/* look up overlay text on image centering // make sure this is responsive */
+
+#zoom {
+  margin-top: 20px;
+  display: flex;
+}
+
+#zoomcolumn-1 {
+  flex: 40vw;
+  margin: 5%;
+}
+
+#zoomcolumn-2 {
+  flex: 60vw;
+  margin-top: 5%;
+  margin-right: 5%;
+}
+
+#timeline-parent {
+  background-image: url(images/fortunecobbling.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#timeline {
+  border-left: 1px #ffe500 solid;
+  border-bottom: 1px #ffe500 solid;
+  display: flex;
+  flex-direction: column;
+}
+
+.date {
+  border-top: 1px solid #ffe500;
+  /* border-bottom: 1px solid #ffe500; */
+  color: #ffe500;
+}
+
+.event {
+  color: #ffe500;
+}
+
+/* ZOOM SECTION END */
+
+/* DEVELOP SECTION */
+
+#develop {
+  margin-top: 20px;
+  display: flex;
+}
+
+#developcolumn-1 {
+  flex: 40vw;
+  margin: 5%;
+}
+
+#developcolumn-2 {
+  flex: 60vw;
+  margin-top: 5%;
+  margin-right: 5%;
+}
+
+/* DEVELOP SECTION END */
+
+/* DISCUSS */
+
+#discuss {
+  margin-top: 20px;
+  display: flex;
+}
+
+#discusscolumn-1 {
+  flex: 40%;
+  margin: 5%;
+}
+
+#discusscolumn-2 {
+  flex: 60%;
+  margin-top: 5%;
+  margin-right: 5%;
+}
+
+#FCTC_Video {
+  width: 100%;
+}
+
+/* DISCUSS SECTION END */
+/* Media Query */
+@media (max-width: 768px) {
+  #top {
+    flex-direction: column;
+  }
+  #processgraphic {
+    flex-direction: column;
+  }
+  #scan {
+    flex-direction: column;
+  }
+  #zoom {
+    flex-direction: column;
+  }
+  #develop {
+    flex-direction: column;
+  }
+  #discuss {
+    flex-direction: column;
+  }
+}
